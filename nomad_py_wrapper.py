@@ -14,5 +14,5 @@ class Nomad:
 			response = requests.post(self.url, json=data)
 			return response
 # testing
-# api = Nomad()
-# print api.detect("f.jpg").text
+api = Nomad()
+print api.detect("hotdog.jpeg").text
