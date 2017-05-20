@@ -21,15 +21,14 @@ def containsHotDog(results):
 	for res in result["results"]:
 		if res["name"] == "hot dog" and res["confidence"] > 50:
 			return True
-		else: 
-			return False
+	return false
 
 if len(sys.argv) < 2:
 	print "missing image directory"
-else: 
+else:
 	api = Nomad()
 	result = json.loads(api.detect(sys.argv[1]).text)
-	
+	print result
 	if containsHotDog(result):
 		print "Hotdog"
 	else: 
