@@ -1,1 +1,0 @@
-from nomad_py_wrapper import nomad
